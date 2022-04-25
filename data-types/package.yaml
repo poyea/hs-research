@@ -1,10 +1,10 @@
-name:                guess-the-number
+name:                data-types
 version:             0.1.0.0
-github:              "poyea/guess-the-number"
+github:              "poyea/data-types"
 license:             BSD3
 author:              "John Law"
 maintainer:          "johnlaw.po@gmail.com"
-copyright:           "2020 John Law"
+copyright:           "2022 John Law"
 
 extra-source-files:
 - README.md
@@ -17,7 +17,7 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/guess-the-number#readme>
+description:         Please see the README on GitHub at <https://github.com/poyea/data-types#readme>
 
 dependencies:
 - base >= 4.7 && < 5
@@ -26,7 +26,7 @@ library:
   source-dirs: src
 
 executables:
-  guess-the-number-exe:
+  data-types-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -34,10 +34,10 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - guess-the-number
+    - data-types
 
 tests:
-  guess-the-number-test:
+  data-types-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:
@@ -45,4 +45,5 @@ tests:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - guess-the-number
+    - data-types
+    - QuickCheck
